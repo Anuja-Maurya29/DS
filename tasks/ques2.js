@@ -10,11 +10,11 @@ var x = [1,2,3,4,5,6,7,8,9];
 function gourav(){
     return "hello";
 }
-Array.prototype.push.call(x,gourav)
+Array.prototype.gourav =function(){
 
-// x.prototype.push(gourav)
-console.log(x.flat());
-// x.gourav();
+    return this.filter((num)=>num%2==0)
+}
+
 
 console.log(typeof(gourav));
 console.log(x.gourav());

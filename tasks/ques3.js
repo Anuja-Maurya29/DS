@@ -3,6 +3,13 @@
 
 // Write the function to get desired output
 
-function curry (fn){
-    var noOfArguments =fn.length
+function Adder(a,b,c){
+return function(b){
+    return function(c){
+        return a+b+c;
+    }
 }
+
+}
+
+console.log(Adder(4)(5)(6));

@@ -11,10 +11,14 @@ let word ="javascript"
 let array =word.split('');
 console.log(array);
 
-// function countChars(word){
-// let count=0;
-// for(let i=0;i<word.length;i--){
-//     for(let j=i;j)
-// }
+function countChars(word){
+let count=0;
+let obj ={};
+for(let i=0;i<word.length;i++){
+    obj[word[i]]= (obj[word[i]] || 0) + 1;
+}
+return obj
 
-// }
+}
+
+console.log(countChars(array));
