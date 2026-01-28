@@ -21,4 +21,19 @@ return obj
 
 }
 
-console.log(countChars(array));
+// console.log(countChars(array));
+
+
+
+// countChars("javascript");
+
+const givenWord = "javascript"
+const charArray = givenWord.split('')
+console.log(charArray);
+
+const counter ={}
+ const result =charArray.map((char)=>{
+ return  counter[char]=(counter[char]||0)+1
+
+})
+console.log(result,"result");
